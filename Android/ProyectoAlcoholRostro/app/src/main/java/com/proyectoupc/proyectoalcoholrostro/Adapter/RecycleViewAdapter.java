@@ -67,7 +67,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             medalcmgl.setText(Double.toString(itemmed.getAlcoholmeasure().get(0).getAlcoholMgl()));
             medalcbac.setText(Double.toString(itemmed.getAlcoholmeasure().get(0).getAlcoholBAC()));
 
-            String ing_alcohol = ((itemmed.getAlcoholmeasure().get(0).getIng_Alcohol() == true) ? "Sí" : "No");
+            String ing_alcohol = ((itemmed.getAlcoholmeasure().get(0).getIng_Alcohol() == 1) ? "Sí" : "No");
 
             ingalc.setText(ing_alcohol);
             date.setText(itemmed.getAlcoholmeasure().get(0).getDate());

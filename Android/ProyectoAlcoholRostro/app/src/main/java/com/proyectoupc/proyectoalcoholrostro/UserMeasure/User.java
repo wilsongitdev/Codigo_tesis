@@ -29,7 +29,7 @@ public class User {
         this.dni = dni;
     }
 
-    public void addalcoholmeasure(int id, double alcoholMgl, double alcoholBAC, boolean Ing_Alcohol, String urlPicture, String date){
+    public void addalcoholmeasure(int id, double alcoholMgl, double alcoholBAC, int Ing_Alcohol, String urlPicture, String date){
         alcoholmeasure.add(new User.Measure(id, alcoholMgl, alcoholBAC, Ing_Alcohol, urlPicture, date));
     }
 
@@ -141,12 +141,12 @@ public class User {
         private int id;
         private double alcoholMgl;
         private double alcoholBAC;
-        private boolean Ing_Alcohol;
+        private int Ing_Alcohol;
         private String urlPicture;
         private String date;
 
 
-        public Measure(int id, double alcoholMgl, double alcoholBAC, boolean Ing_Alcohol, String urlPicture, String date) {
+        public Measure(int id, double alcoholMgl, double alcoholBAC, int Ing_Alcohol, String urlPicture, String date) {
             this.id = id;
             this.alcoholMgl = alcoholMgl;
             this.alcoholBAC = alcoholBAC;
@@ -171,7 +171,7 @@ public class User {
             return urlPicture;
         }
 
-        public boolean getIng_Alcohol() {return Ing_Alcohol;}
+        public int getIng_Alcohol() {return Ing_Alcohol;}
 
         public String getDate() {
             LocalDateTime dateISO = LocalDateTime.parse(date, DateTimeFormatter.ISO_OFFSET_DATE_TIME);

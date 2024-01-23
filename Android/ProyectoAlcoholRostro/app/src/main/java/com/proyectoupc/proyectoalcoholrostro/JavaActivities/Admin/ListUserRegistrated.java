@@ -186,7 +186,7 @@ public class ListUserRegistrated extends AppCompatActivity {
                                 int     id     = jsonobjalc.get("id").getAsInt();
                                 double     Alc_mgL     = jsonobjalc.get("Alc_mgL").getAsInt();
                                 double     Alc_BAC     = jsonobjalc.get("Alc_BAC").getAsInt();
-                                Boolean     Ing_Alcohol = jsonobjalc.get("Ing_Alcohol").getAsBoolean();
+                                int     Ing_Alcohol = jsonobjalc.get("Ing_Alcohol").getAsInt();
                                 String     Picture     = jsonobjalc.get("Picture").getAsString();
                                 String     Date     = jsonobjalc.get("Date").getAsString();
                                 JsonObject Userobj = jsonobjalc.get("User").getAsJsonObject();
