@@ -12,7 +12,7 @@ header('Content-Type: application/json; charset=utf-8');
             $offset = $sizelist*($numberpage-1);
 
             $mysqli = conectarBD();
-            $sql = "SELECT * FROM tb_user INNER JOIN tb_loggin ON tb_user.Email = tb_loggin.Username
+            $sql = "SELECT * FROM tb_user INNER JOIN tb_loggin ON tb_user.email = tb_loggin.Username
             limit ". $sizelist. " offset ".$offset;
             
             $sql1 = "SELECT count(*) as total from tb_loggin";
@@ -27,12 +27,12 @@ header('Content-Type: application/json; charset=utf-8');
             if ($res){
                 while ($fila = mysqli_fetch_array($res,MYSQLI_ASSOC)){
                     $array[] = array(
-                            "DNI"   =>  $fila['DNI'],
-                            "email" =>  $fila['Email'],
-                            "name"  =>  $fila['Name'],
-                            "lastname"  =>    $fila['Lastname'],
-                            "phonenumber"   =>  $fila['PhoneNumber'],
-                            "userimage" =>  $domain['host'].'/proy_control_alc/fotos/usuario/'.$fila['DNI']."/".$fila['Url_Picture'],        
+                            "DNI"   =>  $fila['dni'],
+                            "email" =>  $fila['email'],
+                            "name"  =>  $fila['name'],
+                            "lastname"  =>    $fila['lastname'],
+                            "phonenumber"   =>  $fila['phone_number'],
+                            "userimage" =>  'https://'.$domain['host'].'/proy_control_alc/fotos/usuarios/'.$fila['dni']."/".$fila['user_image'],        
                     );
                 }
                 
