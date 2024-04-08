@@ -46,19 +46,19 @@ train_dir = os.listdir('../images/train_svm/')
 
 face_training = {}
 # Loop through each person in the training directory
+print(train_dir)
+
 for person_id in train_dir:
 
     print(f"Storing images from {person_id}")
-    person_id_int = int(person_id.lstrip('0'))
 
-    if person_id_int > 5:
-        break
     file_list = os.listdir("../images/train_svm/" + person_id)
     file_list.sort(key=lambda x: int(x.split('_')[-1].split('.')[0]))  # Ordenar por número en el nombre
     total_images_train = round((PERCENTAGE_FOR_TRAINING / 100) * len(file_list))
     iterate_img = 0
     total_images_trained = 0
     # Loop through each training image for the current person
+    print(file_list)
     for person_img in file_list:
         iterate_img += 1
 

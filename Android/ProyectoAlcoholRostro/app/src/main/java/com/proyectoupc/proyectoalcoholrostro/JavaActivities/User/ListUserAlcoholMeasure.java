@@ -170,7 +170,7 @@ public class ListUserAlcoholMeasure extends AppCompatActivity {
                 params.put("sizelist",Integer.toString(7));
                 params.put("numberpage",Integer.toString(1));
                 params.put("startdate","2021-06-30 00:00:00");
-                params.put("enddate","2023-10-30 23:00:00");
+                params.put("enddate","2025-10-30 23:00:00");
                 return params;
             }
 
@@ -248,8 +248,8 @@ public class ListUserAlcoholMeasure extends AppCompatActivity {
                 params.put("username",sharedPref.getString("Username","admin"));
                 params.put("sizelist",Integer.toString(7));
                 params.put("numberpage",Integer.toString(offset));
-                params.put("startdate","2021-06-30 00:00:00");
-                params.put("enddate","2023-10-30 23:00:00");
+                params.put("startdate","2022-06-30 00:00:00");
+                params.put("enddate","2024-10-30 23:00:00");
                 return params;
             }
 
