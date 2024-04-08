@@ -106,7 +106,7 @@ public class ListUserAlcoholMeasure extends AppCompatActivity {
                     public void onResponse(String response) {
                         // Display the first 500 characters of the response string.
                         try {
-                            Log.d("response:",response);
+                            Log.d("response :",response);
                             JsonObject objresponse= JsonParser.parseString(response).getAsJsonObject();
                             JsonObject objmodel = objresponse.get("objModel").getAsJsonObject();
 
