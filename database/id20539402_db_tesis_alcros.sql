@@ -125,12 +125,12 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`dni`, `email`, `name`, `lastname`, `phone_number`, `city`, `country`, `user_image`) VALUES
-('00000001', 'wechavesta@hotmail.com', 'Wilson Eduardo', 'Chavesta', '951211174', 'Lima', 'Perú', 'user643a569d48358.jpg'),
+('00000001', 'wechavesta@hotmail.com', 'Wilson E', 'Chavesta', '951211174', 'Lima', 'Perú', 'user643a569d48358.jpg'),
 ('00000002', 'sgonzales@hotmail.com', 'Sara', 'Gonzales', '954541113', 'Lima', 'Perú', 'user643a57578ebbf.jpg'),
 ('00000003', 'jcardenas@gmail.com', 'Jorge', 'Cardenas', '912111445', 'Lima', 'Perú', 'user643b426d840d0.jpg'),
 ('00000004', 'jchavesta@hotmail.com', 'Jackie', 'Chavesta', '912113746', 'Lima', 'Perú', 'user643b42c803849.jpg'),
-('00000005', 'wilson_13_10@hotmail.com', 'Wilson', 'Chavesta Gonzales', '954541221', 'Lima', 'Perú', 'user1565934329801.jpg'),
-('00000006', 'lmerino@hotmail.com', 'Luis', 'Merino Rojas', '917541331', 'Lima', 'Perú', 'user643a57578eer4.jpg'),
+('00000005', 'wilson_13_10@hotmail.com', 'Wilson', 'Chavesta', '954541221', 'Lima', 'Perú', 'user1565934329801.jpg'),
+('00000006', 'lmerino@hotmail.com', 'Luis', 'Merino', '917541331', 'Lima', 'Perú', 'user643a57578eer4.jpg'),
 ('00000007', 'aoshita@hotmail.com', 'Angel', 'Oshita', '945451175', 'Lima', 'Perú', 'user643a516544745.jpg');
 
 --
